@@ -1,0 +1,49 @@
+.banner-container {
+  display: flex;
+  align-items: center;
+}
+.banner-details {
+  z-index: -1;
+  flex: 1;
+}
+span{
+    color: #F5C34B;
+}
+.silde {
+  position: absolute;
+  top: 0;
+  height: 740px;
+  width: 50%;
+  z-index: -1;
+}
+.banner-image img {
+  width: 100%;
+}
+.banner-image {
+  flex: 1;
+  margin-right: 50px;
+}
+.banner-btn{
+    margin-top: 10px;
+    padding: 15px 30px;
+    background: #F5C34B;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+@media screen and (max-width:688px) {
+    .banner-container{
+        flex-direction: column;
+    }
+    .banner-details{
+        margin: 100px 0px;
+    }
+    .silde{
+        width: 100%;
+    }
+    .banner-image{
+        width: 90%;
+        margin: auto;
+    }
+}
